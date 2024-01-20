@@ -28,7 +28,7 @@ api_key = st.secrets["openai_secret"]
 client = OpenAI(api_key=api_key)
 
 # Streamlit UI components
-st.title('''Dr. Ernesto Lee - CAI 2300C Introduction to Natural Language Processing at Miami Dade College - Kendall Campus - Hate Speech Detection''')
+st.title(''' Kysh's NLP App''')
 
 user_input = st.text_area("Enter text to moderate")
 
