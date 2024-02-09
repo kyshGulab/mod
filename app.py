@@ -28,6 +28,8 @@ api_key = st.secrets["openai_secret"]
 client = OpenAI(api_key=api_key)
 
 # Streamlit UI components
+st.info("This tool aims to detect harmful and inappropriate material")
+
 st.title(''' Kysh's NLP App''')
 
 user_input = st.text_area("Enter text to moderate")
