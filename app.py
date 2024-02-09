@@ -3,16 +3,8 @@ from openai import OpenAI
 import json
 from PIL import Image
 
-background_color = """
-    <style>
-    body {
-        background-color: #f0f0f0; /* Light gray color */
-    }
-    </style>
-"""
-
-# Apply the background color using st.markdown()
-st.markdown(background_color, unsafe_allow_html=True)
+st.set_page_config(layout="wide", page_title="Kysh's NLP App", page_icon=":pencil2:", 
+                   initial_sidebar_state="expanded", background_color="#f0f0f0")
 
 image = Image.open("images/moderation.png")
 st.image(image, use_column_width=True)
@@ -45,7 +37,7 @@ client = OpenAI(api_key=api_key)
 # Streamlit UI components
 st.info("This tool aims to detect harmful and inappropriate material")
 
-st.title(''' Kysh's NLP App''')
+#st.title(''' Kysh's NLP App''')
 
 user_input = st.text_area("Enter text to moderate")
 
