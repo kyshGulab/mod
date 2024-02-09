@@ -3,8 +3,7 @@ from openai import OpenAI
 import json
 from PIL import Image
 
-st.set_page_config(layout="wide", page_title="Kysh's NLP App", page_icon=":pencil2:", 
-                   initial_sidebar_state="expanded", background_color="#f0f0f0")
+st.set_page_config(page_title="Kysh's NLP App", background_color="#f0f0f0")
 
 image = Image.open("images/moderation.png")
 st.image(image, use_column_width=True)
