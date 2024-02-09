@@ -3,7 +3,7 @@ from openai import OpenAI
 import json
 from PIL import Image
 
-st.set_page_config(background_color="#f0f0f0")
+#st.set_page_config(background_color="#f0f0f0")
 
 image = Image.open("images/moderation.png")
 st.image(image, use_column_width=True)
