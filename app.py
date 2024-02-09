@@ -1,6 +1,10 @@
 import streamlit as st
 from openai import OpenAI
 import json
+from PIL import Image
+
+image = Image.open("images/moderation.png")
+st.image(image, use_column_width=True)
 
 # Function to serialize the output
 def serialize(obj):
