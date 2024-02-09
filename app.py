@@ -3,6 +3,17 @@ from openai import OpenAI
 import json
 from PIL import Image
 
+background_color = """
+    <style>
+    body {
+        background-color: #f0f0f0; /* Light gray color */
+    }
+    </style>
+"""
+
+# Apply the background color using st.markdown()
+st.markdown(background_color, unsafe_allow_html=True)
+
 image = Image.open("images/moderation.png")
 st.image(image, use_column_width=True)
 
